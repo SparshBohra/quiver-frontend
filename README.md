@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quiver - Pinterest for AI Prompts
+
+Quiver is a beautiful, scrollable prompt discovery platform that lets users browse, copy, save, and share prompts across text, image, and video models — all without execution (for now).
+
+![Quiver](https://i.imgur.com/UltfHhb.png)
+
+## Features
+
+- 🌟 Browse prompts across text, image, and video AI models
+- 📋 One-click copy for easy prompt reuse
+- 🏷️ Filter prompts by categories and tags
+- 🌗 Dark/Light mode support 
+- 🧩 Masonry grid layout for visually pleasing discovery
+- 📱 Fully responsive design
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ and npm
+
+### Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/quiver.git
+cd quiver
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+## Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+- ⚡ [Next.js](https://nextjs.org/) - React framework
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- 🔍 [TypeScript](https://www.typescriptlang.org/) - Type checking
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+quiver/
+├── src/
+│   ├── app/                # Next.js app router
+│   ├── components/
+│   │   ├── layout/         # Layout components (Header, Footer)
+│   │   ├── prompts/        # Prompt-related components 
+│   │   └── ui/             # UI components
+│   └── data/               # Mock data
+├── public/                 # Static assets
+└── ...
+```
 
-## Deploy on Vercel
+## Roadmap
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🚀 Authentication
+- 💾 Allow users to save prompts to collections
+- 📤 Enable prompt submission 
+- 🧠 AI execution
+- 🌐 User profiles and leaderboards
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Inspired by Pinterest's discovery UX
+- Created to make AI prompting more accessible and community-driven
